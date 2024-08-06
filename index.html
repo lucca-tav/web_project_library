@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
             alt="Logotipo da Biblioteca Triple Peaks"
             class="nav__logo"
           />
-          <ul class="nav__links">
+          <ul class="nav__links" role="list">
             <li>
               <a class="nav__link" href="#staff">Escolhas da Equipe</a>
             </li>
@@ -26,10 +26,10 @@
               <a class="nav__link" href="#events">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Seja um membro</a>
+              <a class="nav__link" href="#membership">Seja um membro</a>
             </li>
             <li>
-              <a class="nav__link">Contatos</a>
+              <a class="nav__link" href="#footer">Contatos</a>
             </li>
           </ul>
         </nav>
@@ -74,6 +74,7 @@
                 </p>
               </div>
             </li>
+
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">
@@ -92,6 +93,7 @@
                 </p>
               </div>
             </li>
+
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">
@@ -109,6 +111,7 @@
                 <p class="card__footer">Steve McConnell</p>
               </div>
             </li>
+
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">
@@ -166,59 +169,154 @@
           </div>
           <div class="events__cover">
             <img
-              src="./images/cafe.png"
-              alt="Cafe Space"
               class="events__image"
+              src="/images/cafe.png"
+              alt="Ilustração de uma cafeteria"
             />
             <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
-                src="./images/person_feynman.png"
-                alt="Feynman Photo"
                 class="person__image person__image_size_l"
+                src="/images/person_feynman.png"
+                alt="Foto de Joan Feynman"
               />
             </div>
-
-            <div>
-              <div class="person person_name_burbidge">
-                <p class="person__caption">Margaret Burbidge</p>
-                <img
-                  src="./images/person_burbidge.png"
-                  alt="Burbidge Photo"
-                  class="person__image person__image_size_m"
-                />
-              </div>
-
-              <div class="person person_name_cannon">
-                <p class="person__caption">Annie Jump Cannon</p>
-                <img
-                  src="./images/person_cannon.png"
-                  alt="Cannon Photo"
-                  class="person__image person__image_size_m"
-                />
-              </div>
-
-              <div class="person person_name_mitchell">
-                <p class="person__caption">Maria Mitchell</p>
-                <img
-                  src="./images/person_mitchell.png"
-                  alt="Mitchell Photo"
-                  class="person__image person__image_size_s"
-                />
-              </div>
-
-              <div class="person person_name_tarter">
-                <p class="person__caption">Jill Tarter</p>
-                <img
-                  src="./images/person_tarter.png"
-                  alt="Tarter Photo"
-                  class="person__image person__image_size_m"
-                />
-              </div>
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burbidge</p>
+              <img
+                class="person__image person__image_size_m"
+                src="/images/person_burbidge.png"
+                alt="Foto de Margaret Burbidge"
+              />
+            </div>
+            <div class="person person_name_cannon">
+              <img
+                class="person__image person__image_size_m"
+                src="/images/person_cannon.png"
+                alt="Foto de Annie Jump Cannon"
+              />
+              <p class="person__caption">Annie Jump Cannon</p>
+            </div>
+            <div class="person person_name_mitchell">
+              <img
+                class="person__image person__image_size_s"
+                src="/images/person_mitchell.png"
+                alt="Foto de Maria Mitchell"
+              />
+              <p class="person__caption">Maria Mitchell</p>
+            </div>
+            <div class="person person_name_tarter">
+              <p class="person__caption">Jill Tarter</p>
+              <img
+                class="person__image person__image_size_m"
+                src="/images/person_tarter.png"
+                alt="Foto de Jill Tarter"
+              />
             </div>
           </div>
         </section>
+        <section class="membership" id="membership">
+          <h2 class="membership__title">
+            Tornar-se membro da biblioteca é fácil!
+          </h2>
+          <ul class="membership__steps">
+            <li class="step">
+              <h3 class="step__title">
+                Step 1
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Preencha o formulário de filiação online ou pessoalmente.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Step 2
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Venha retirar seu cartão da biblioteca na recepção.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Step 3
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">Assine o verso do cartão.</p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Step 4
+                <img
+                  src="./images/icon_step_finish.svg"
+                  alt="icon finish"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Aproveite todos os benefícios incríveis!
+              </p>
+            </li>
+          </ul>
+        </section>
       </main>
+
+      <footer class="footer" id="footer">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="/images/logo_white.svg"
+              alt="Logomarca da biblioteca
+            Triple"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h4 class="footer__column-heading">Horário de Funcionamento</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Dias úteis: 09h às 20h</li>
+              <li class="footer__list-item">Finais de semana: 10h às 18h</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading">Redes Sociais</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="/images/facebook_white.svg"
+                    alt="Logomarca do Facebook"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="/images/instagram_white.svg"
+                    alt="Logomarca do Instagram"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2024 Lucca Tavares</p>
+      </footer>
     </div>
   </body>
 </html>
